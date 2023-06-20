@@ -1,6 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+
+    background-color: #1c1e21;
+    color: white;
 }
 
 header nav {
@@ -26,6 +29,19 @@ section {
     justify-content: space-evenly;
 
     width: 50%;
+}
+
+.middle-nav li {
+    display: flex;
+    justify-content: center;
+
+    margin: 5px;
+    width: 6vw;
+    border-radius: 5px;
+}
+
+.middle-nav img {
+    width: 44px;
 }
 
 .right-nav {
