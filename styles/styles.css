@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+li {
+    display: inline-block;
+}
+
+section {
+    display: flex;
+}
+
+.left-nav {
+    width: 30%;
+}
+
+.middle-nav {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 50%;
+}
+
+.right-nav {
+    width: 20%;
+}
