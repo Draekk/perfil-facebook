@@ -6,6 +6,8 @@
     color: white;
 }
 
+
+
 figure, img, a, section, ul, li, input {
     background: none;
     border: 0;
@@ -22,7 +24,7 @@ li {
     display: inline-block;
 }
 
-section {
+nav section {
     display: flex;
 }
 
@@ -85,11 +87,11 @@ figure {
 
 .middle-nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     background: none;
 
-    width: 40%;
+    width: 50%;
 }
 
 .middle-nav li {
@@ -99,6 +101,7 @@ figure {
     width: 8.8vw;
     height: 48px;
     border-radius: 8px;
+    margin-right: 8px;
 }
 
 .middle-nav a {
@@ -127,4 +130,53 @@ figure {
 .right-nav {
     width: 25%;
     background: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    margin-right: 20px;
+}
+
+.right-nav li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    margin: 0 5px;
+
+    background-color: #40444b;
+    border-radius: 20px;
+    border: none;
+}
+
+.right-nav li:hover {
+    background-color: #5a5f67;
+}
+
+.right-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.right-nav img {
+    width: 25px;
+    filter: invert(100%);
+}
+
+.right-nav img[src="./media/header-nav/perfil-ico.jpg"] {
+    width: 40px;
+    filter: none;
+}
+
+.right-nav li:nth-child(4):hover {
+    filter: brightness(1.5);
 }
