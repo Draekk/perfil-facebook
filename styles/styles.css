@@ -10,7 +10,7 @@ header nav {
     display: flex;
     justify-content: space-between;
     height: 50px;
-    background-color: #2b2e32;
+    background-color: #24272a;
 }
 
 li {
@@ -21,8 +21,29 @@ section {
     display: flex;
 }
 
+figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/*LEFT-NAV*/
+
 .left-nav {
     width: 35%;
+    background: none;
+}
+
+.left-nav > figure {
+    margin-left: 5px;
+    background: none;
+}
+
+.left-nav img[src="./media/facebook-logo.png"] {
+    width: 40px;
     background: none;
 }
 
