@@ -6,10 +6,15 @@
     color: white;
 }
 
+figure, img, a, section, ul, li, input {
+    background: none;
+    border: 0;
+}
+
 header nav {
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    height: 56px;
     background-color: #24272a;
 }
 
@@ -37,14 +42,40 @@ figure {
     background: none;
 }
 
-.left-nav > figure {
-    margin-left: 5px;
+.left-nav > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 15px;
+}
+
+.left-nav img[src="./media/header-nav/facebook-logo.png"] {
+    width: 40px;
     background: none;
 }
 
-.left-nav img[src="./media/facebook-logo.png"] {
-    width: 40px;
-    background: none;
+.left-nav section {
+    margin: 8px;
+    margin-left: 10px;
+    background-color: #40444b;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 280px;
+}
+
+.left-nav img[src="./media/header-nav/search-ico.png"] {
+    width: 18px;
+    filter: invert(100%);
+    margin: 10px;
+}
+
+.left-nav input {
+    width: 250px;
+}
+
+.left-nav input:focus {
+    outline: none;
 }
 
 
@@ -65,10 +96,9 @@ figure {
     display: flex;
     justify-content: center;
 
-    width: 8.3vw;
-    height: 43px;
+    width: 8.8vw;
+    height: 48px;
     border-radius: 8px;
-    background: none;
 }
 
 .middle-nav a {
