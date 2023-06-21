@@ -4,13 +4,19 @@
 
     background-color: #1c1e21;
     color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
-
-figure, img, a, section, ul, li, input {
+figure, img, a, section, ul, li, input, h1, h4, p {
     background: none;
     border: 0;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    border-bottom: solid 1.5px #363b3f;
+    box-sizing: border-box;
 }
 
 header nav {
@@ -179,4 +185,136 @@ figure {
 
 .right-nav li:nth-child(4):hover {
     filter: brightness(1.5);
+}
+
+
+
+
+/*BANNER*/
+
+main {
+    background-color: #242526;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-sec {
+    display: flex;
+    justify-content: center;
+}
+
+.banner-sec figure {
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    width: 75%;
+    height: 350px;
+    background: none;
+}
+
+.banner-sec img {
+    width: 100%;
+}
+
+
+
+
+/*PROFILE*/
+
+.profile-sec {
+    display: flex;
+
+    height: 150px;
+}
+
+.profile-sec figure:nth-child(1) {
+    width: 170px;
+    min-width: 170px;
+    height: 170px;
+    margin-left: 10px;
+    overflow: hidden;
+    border-radius: 85px;
+    border: solid 4px #242526;
+
+    transform: translateY(-20%);
+}
+
+.profile-sec > figure img {
+    width: 175px;
+}
+
+main section:nth-child(2) {
+    width: 65%;
+}
+
+.profile-sec section:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-sec section:nth-child(2) h1 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+.profile-sec section:nth-child(2) p {
+    margin-bottom: 10px;
+}
+
+.profile-sec section:nth-child(2) ul {
+    display: flex;
+    justify-content: flex-start;
+    width: 100px;
+}
+
+.profile-sec li {
+    overflow: hidden;
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    border: solid 2.5px #242526;
+}
+
+.profile-sec li img {
+    width: 30px;
+}
+
+.profile-sec li:nth-child(2) img {
+    width: 45px;
+    transform: translateX(-15%);
+}
+
+.profile-sec li:nth-child(1) {
+    z-index: 9;
+}
+.profile-sec li:nth-child(2) {
+    transform: translateX(-35%);
+    z-index: 8;
+}
+.profile-sec li:nth-child(3) {
+    transform: translateX(-60%);
+    z-index: 7;
+}
+.profile-sec li:nth-child(4) {
+    transform: translateX(-85%);
+    z-index: 6;
+}
+.profile-sec li:nth-child(5) {
+    transform: translateX(-110%);
+    z-index: 5;
+}
+.profile-sec li:nth-child(6) {
+    transform: translateX(-135%);
+    z-index: 4;
+}
+.profile-sec li:nth-child(7) {
+    transform: translateX(-160%);
+    z-index: 3;
+}
+.profile-sec li:nth-child(8) {
+    transform: translateX(-185%);
+    z-index: 2;
 }
