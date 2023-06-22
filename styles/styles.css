@@ -7,7 +7,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-figure, img, a, section, ul, li, input, h1, h4, p {
+figure, img, a, section, ul, li, input, h1, h4, h5, p {
     background: none;
     border: 0;
 }
@@ -193,7 +193,15 @@ figure {
 /*BANNER*/
 
 main {
-    background-color: #242526;
+    /*background-color: #242526;*/
+    background-image: linear-gradient(
+        #2425269b,
+        #242526f4,
+        #242526
+    ), url(../media/portada.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -208,7 +216,7 @@ main {
 .banner-sec figure {
     border-radius: 0 0 10px 10px;
     overflow: hidden;
-    width: 75%;
+    width: 950px;
     height: 350px;
     background: none;
 }
@@ -226,6 +234,8 @@ main {
     display: flex;
 
     height: 150px;
+    border-bottom: solid 1px #363b3f;
+    padding-bottom: 8px;
 }
 
 .profile-sec figure:nth-child(1) {
@@ -245,28 +255,33 @@ main {
 }
 
 main section:nth-child(2) {
-    width: 65%;
+    width: 870px;
 }
 
 .profile-sec section:nth-child(2) {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    width: 350px;
 }
 
 .profile-sec section:nth-child(2) h1 {
     font-size: 1.8rem;
-    margin: 10px 0;
+    margin: 10px 20px;
 }
 
 .profile-sec section:nth-child(2) p {
     margin-bottom: 10px;
+    margin-left: 20px;
 }
 
 .profile-sec section:nth-child(2) ul {
     display: flex;
     justify-content: flex-start;
     width: 100px;
+
+    margin-left: 20px;
 }
 
 .profile-sec li {
@@ -280,41 +295,107 @@ main section:nth-child(2) {
 
 .profile-sec li img {
     width: 30px;
+    filter: brightness(0.8);
 }
 
-.profile-sec li:nth-child(2) img {
+.profile-sec li img:hover {
+    filter: brightness(1.1);
+}
+
+.friend-list li:nth-child(2) img {
     width: 45px;
     transform: translateX(-15%);
 }
 
-.profile-sec li:nth-child(1) {
+.friend-list li:nth-child(1) {
     z-index: 9;
 }
-.profile-sec li:nth-child(2) {
+.friend-list li:nth-child(2) {
     transform: translateX(-35%);
     z-index: 8;
 }
-.profile-sec li:nth-child(3) {
+.friend-list li:nth-child(3) {
     transform: translateX(-60%);
     z-index: 7;
 }
-.profile-sec li:nth-child(4) {
+.friend-list li:nth-child(4) {
     transform: translateX(-85%);
     z-index: 6;
 }
-.profile-sec li:nth-child(5) {
+.friend-list li:nth-child(5) {
     transform: translateX(-110%);
     z-index: 5;
 }
-.profile-sec li:nth-child(6) {
+.friend-list li:nth-child(6) {
     transform: translateX(-135%);
     z-index: 4;
 }
-.profile-sec li:nth-child(7) {
+.friend-list li:nth-child(7) {
     transform: translateX(-160%);
     z-index: 3;
 }
-.profile-sec li:nth-child(8) {
+.friend-list li:nth-child(8) {
     transform: translateX(-185%);
     z-index: 2;
+}
+
+
+
+
+
+/*PROFILE RIGHT BUTTONS*/
+
+.profile-sec section:last-child {
+    display: flex;
+    align-items: end;
+    padding-bottom: 20px;
+
+    width: 342px;
+}
+
+.profile-right-btns {
+    width: 342px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.profile-right-btns li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    width: 150px;
+    height: 35px;
+    background-color: #0077b6;
+    border-radius: 7px;
+}
+
+.profile-right-btns a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 150px;
+    height: 100%;
+    text-decoration: none;
+}
+
+.profile-right-btns li:nth-child(1) a:hover {
+    background-color: #2093d1;
+}
+
+.profile-right-btns li:nth-child(2) a {
+    background-color: #40444b;
+}
+
+.profile-right-btns li:nth-child(2) a:hover {
+    background-color: #5a5f67;
+}
+
+.profile-right-btns li img {
+    width: 15px;
+    filter: invert(100%);
+    margin: 0 6px;
 }
